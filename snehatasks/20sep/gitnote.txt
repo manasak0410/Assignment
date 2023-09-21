@@ -1,0 +1,9 @@
+1)What is prune in fetch ?
+git fetch -prune The git fetch -prune <remote> command deletes all the objects that are not reachable from the git remote repository.
+2)Learn what is squash and interactive interface of squash?
+To "squash" in Git means to combine multiple commits into one. You can do this at any point in time (by using Git's "Interactive Rebase" feature), though it is most often done when merging branches.
+3)What is merge conflicts and how to resolve it ? 
+A merge conflict occurs in version control systems like Git when two or more branches have made changes to the same part of a file or files, and Git is unable to automatically determine which changes should take precedence.
+1)Update Your Local Repository:
+Before attempting to merge, make sure yogit fetch origin
+git pull origin <branch-name>ur local repository is up to date with the latest changes from the remote repository.
