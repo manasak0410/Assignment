@@ -1,0 +1,16 @@
+1. What is prune in fetch?
+	Prune in Git or Version Control: If you are using Git, a popular version control system, "prune" is a command used to remove references to remote branches that no longer exist on the remote repository. This helps keep your local Git repository up to date with the remote repository and removes references to branches that have been deleted remotely.
+        
+
+2.Learn what is squash and interactive interface of squash?
+        SQUASH-Squashing commits in Git means combining multiple commits into a single one. Squashing is most often performed when merging two branches, and the purpose is to simplify the Git tree structure and remove redundant commits.
+
+        Squashing combines multiple commits into a single commit based on your commit history. With the help of squashing you can clean your branch history and can maintain an organized commit timeline. It is used before pulling requests or merging feature branches.
+  
+3)What is merge conflicts and how to resolve it ? 
+        A merge conflict occurs in version control systems like Git when two or more branches have made changes to the same part of a file or files, and Git is unable to automatically determine which changes should take precedence.
+
+1)Update Your Local Repository:
+Before attempting to merge, make sure yogit fetch origin
+git pull origin <branch-name>ur local repository is up to date with the latest changes from the remote repository.
+
