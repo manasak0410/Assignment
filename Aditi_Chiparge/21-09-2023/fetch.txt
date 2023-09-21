@@ -1,0 +1,5 @@
+What is prune in fetch ?
+           git fetch -prune The git fetch -prune <remote> command deletes all the objects that are not reachable from the git remote repository.
+ git remote prune origin The git remote prune origin command deletes all the unreachable objects from the remote repository but it doesn't fetch them.
+The git fetch –prune <remote> command is a way to delete all the objects that are not reachable from the remote repository. 
+And if you want to only prune the remote repository and not to fetch it, you can use: git remote prune origin. This will result in the remote repository being pruned.
