@@ -1,0 +1,30 @@
+What is a Merge Conflict in Git?
+A merge conflict occurs in Git when you attempt to merge two branches, and Git is unable to automatically combine the changes because there are conflicting edits to the same part of a file in both branches. Essentially, Git doesn't know which changes to keep because both branches have made conflicting modifications.
+Here's a simplified explanation of what a merge conflict is and how to resolve it:
+Imagine you and a colleague are working on the same document, and you both edit the same sentence differently. When you try to combine your changes, your word processor doesn't know which version of the sentence to keep. That's like what happens in a merge conflict in Git.
+How to Resolve a Merge Conflict:
+Identify the Conflict: Git will notify you about the conflict when you try to merge branches. You'll see messages indicating which files have conflicts. Open those files in a text editor.
+View the Conflict: Inside the conflicted file, you'll see something like this
+<<<<<<< HEAD
+This is your change.
+=======
+This is their change.
+>>>>>>> other-branch
+The lines between <<<<<<< HEAD and ======= are your changes, and the lines between ======= and >>>>>>> other-branch are the changes from the other branch.
+Manually Edit the File: Decide which changes to keep or combine. You can edit the file to include the desired changes. Remove the conflict markers (<<<<<<< HEAD, =======, and >>>>>>> other-branch) once you're done.
+Save the File: Save your changes in the text editor.
+Add and Commit: After resolving all conflicts in the file(s), add the modified files using git add and then commit the changes using git commit. Git will automatically create a commit message indicating that you resolved a merge conflict.
+Complete the Merge: Once all conflicts are resolved and committed, you can complete the merge with git merge or git pull as usual.
+
+What is prune in fetch?
+In the context of Git, the "prune" feature within the "git fetch" command is a handy tool for keeping your local repository clean and up-to-date. When you use "git fetch" to get updates from a remote repository, Git fetches information about its branches and references.
+
+However, as time goes on, the remote repository may undergo changes like branch deletions or renames. Without using "prune," your local repository might hold onto references to branches that no longer exist on the remote. This can lead to a cluttered and outdated local Git environment.
+By employing "git fetch --prune," you address this issue effectively. When you run this command, Git not only fetches updates from the remote but also actively looks for references to remote branches that have been deleted or renamed. It then takes action to remove these obsolete references from your local repository, ensuring that it accurately mirrors the state of the remote repository.
+To put it simply, "git fetch --prune" acts like a cleanup crew for your local Git setup, tidying up bookmarks to branches on the remote that are no longer around. This practice helps maintain a neat repository and prevents any confusion arising from outdated references, ensuring your local workspace stays in sync with the remote.
+
+What is squash?
+Squashing in Git is a process of combining multiple commits into a single, coherent commit. It's often used to streamline a branch's commit history, eliminating numerous small, incremental commits. During an interactive rebase, you mark commits for squashing, and Git merges their changes into one commit, preserving the final state while discarding individual commit messages. This results in a cleaner, more organized commit history that enhances code review, simplifies troubleshooting, and keeps the repository's timeline more concise and readable. Squashing is particularly helpful when preparing code for merging into the main branch, reducing clutter and making the project's history easier to follow.
+
+
+
