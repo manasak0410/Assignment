@@ -1,0 +1,6 @@
+what is squash and interactive interface of squash?
+Assume you are building a project using Git as your version control.
+ You released Version One after that you wanted to add new features for the Version Two release and you even fixed a few bugs found in Version One.
+ You had plenty of commits piled up after your 1st release. 
+You can initiate an interactive rebase from the command line by running: git rebase -i main Where main is the branch/commit that serves
+ as the "root" of the rebase. Only commits between the root and the tip of your current branch are included in the rebase.
