@@ -1,0 +1,16 @@
+About merge conflicts
+Merge conflicts happen when you merge branches that have competing commits, and Git needs your help to decide which changes to incorporate in the final mergeGit can often resolve differences between branches and merge them automatically. Usually, the changes are on different lines, or even in different files, which makes the merge simple for computers to understand. However, sometimes there are competing changes that Git can't resolve without your help. Often, merge conflicts happen when people make different changes to the same line of the same file, or when one person edits a file and another person deletes the same file.You must resolve all merge conflicts before you can merge a pull request on GitHub. If you have a merge conflict between the compare branch and base branch in your pull request, you can view a list of the files with conflicting changes above the Merge pull request button. The Merge pull request button is deactivated until you've resolved all conflicts between the compare branch and base branch.
+$ git merge BRANCH-NAME
+> Auto-merging styleguide.md
+> CONFLICT (content): Merge conflict in styleguide.md
+> Automatic merge failed; fix conflicts and then commit the result
+What is Squash?
+Squashing a commit means, from an idiomatic point of view, to move the changes introduced in said commit into its parent so that you end up with one commit instead of two (or more).If you repeat this process multiple times, you can reduce n commit to a single one.
+Interactive Interface -
+in Git, when you want to combine multiple commits into a single, more cohesive commit, you can use the git rebase command with the interactive mode to squash or merge commits interactively. Squashing allows you to clean up your commit history by combining related commits into a single commit.
+What is Prune fetch?
+The Git prune command is used to delete all the files that are not reachable from the current branch. Unreachable objects are objects that are inaccessible from any of the available references. The primary use of the Git prune command is to clean the working directory after we finish the work on the project. If an object or commit is no more reachable from the current branch, the git prune command will delete that object or commit from the working directory.
+Commands
+git fetch -prune The git fetch -prune <remote> command deletes all the objects that are not reachable from the git remote repository.
+git remote prune origin The git remote prune origin command deletes all the unreachable objects from the remote repository but it doesn't fetch them
+git config -global fetch.prune true The git config -global fetch.prune true command is used to configure git to prune the remote repository when we fetch it.
