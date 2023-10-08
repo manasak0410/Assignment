@@ -1,0 +1,7 @@
+What is stashing?
+         The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
+Sometimes you want to switch the branches, but you are working on an incomplete part of your current project. You don't want to make a commit of half-done work.
+ Git stashing allows you to do so. The git stash command enables you to switch branches without committing the current branch.
+
+
+         

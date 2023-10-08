@@ -1,0 +1,19 @@
+1)What is stashing?
+Stashing in Git is like putting your work aside in a safe place while you focus on something else. Imagine you're writing a story, but you suddenly need to address an urgent matter. You don't want to save your unfinished work because it's not ready yet. Instead, you put your current pages in a drawer, making your desk clear for the urgent task.
+
+ 
+
+In Git, when you use git stash, you're doing something similar. You temporarily save your changes (like new code or edits) without committing them. This helps you switch to a different task or branch without messing up your ongoing work. When you're ready to go back to your code, you open the drawer (git stash apply), and your changes are back on your desk for you to continue working.
+
+ 
+
+Stashing keeps your work organized and prevents you from accidentally losing changes or committing incomplete work. It's a handy tool for managing multiple tasks in Git.
+
+ 
+
+2)Steps for adding file to github repo:-
+1)git init
+2)git add file_name
+3)git commit -m "your message"
+4)git remote add origin "your url"
+5)git push orgin branch_name

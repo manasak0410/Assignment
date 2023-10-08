@@ -1,0 +1,59 @@
+SQUASHING AND INTERACTIVE INTERFACES
+
+Squash is a Git command used to combine multiple commits into a single commit. This is often done to clean up the commit history, especially when working on feature branches or topic branches. Squashing allows you to present a more organized and concise history before merging your changes into the main branch.
+
+To squash commits, you typically use the git rebase command with the -i or --interactive flag. Here's a general outline of the process:
+
+· N is the number of commits you want to include in the interactive rebase.
+
+· This command opens an interactive interface where you can choose which commits to squash and which to keep as separate commits.
+
+After specifying "squash" for the commits you want to combine, you can provide a single commit message for the resulting squashed commit.
+
+Interactive Interface of Squash:
+
+· When people refer to an "interactive interface of squash," they are typically talking about the interactive rebase process mentioned above.
+
+· The interactive interface provides you with a list of commits and allows you to choose what actions to take for each commit.
+
+· In this interface, you can select "squash" or "fixup" for specific commits to combine them with the previous commit. You can also edit commit messages and reorder commits.
+
+· It's a powerful tool for managing commit history and ensuring that your commits are well-organized before they are merged into the main branch.
+
+So, to summarize, "squash" refers to the action of combining multiple commits into one, and the "interactive interface of squash" is the interactive rebase interface that lets you perform this action and make other changes to your commit history.
+
+MERGE AND HOW TO FIX IT
+
+A merge conflict occurs in version control systems like Git when two or more branches have changes to the same part of a file, and Git is unable to automatically determine which changes should be incorporated into the final merge. Merge conflicts can happen when you try to merge branches or pull changes from a remote repository into your local branch. Here's how to identify and resolve merge conflicts:
+
+1. Identify the Conflict:
+
+When you attempt to merge or pull changes, Git will notify you if there's a conflict. You'll see a message like "CONFLICT" in your terminal or in your Git client.
+
+2. Open the Conflict File:
+
+Use a text editor or integrated development environment (IDE) to open the file(s) that have conflicts. Inside the file, Git will mark the conflicting sections like this:
+
+The lines between <<<<<<< HEAD and ======= are your current branch's changes, and the lines between ======= and >>>>>>> branch-name are the incoming branch's changes.
+
+3. Resolve the Conflict:
+
+Manually edit the conflicting parts of the file to choose which changes to keep and which to discard. You can also make entirely new changes if needed.
+
+Remove the conflict markers (<<<<<<< HEAD, =======, >>>>>>> branch-name) when you're done.
+
+4. Save the File:
+
+Save the file with your changes.
+
+5. Add and Commit:
+
+After resolving all conflicts in the file(s), add the resolved files to the staging area using git add filename. Alternatively, you can use git add . to stage all resolved files. Then, commit the changes with git commit.
+
+6. Finish the Merge:
+
+If you were in the process of merging branches, use git merge --continue to finish the merge process.
+
+7. Push Your Changes:
+                    If you were pulling changes from a remote repository, push your local changes back to the remote using git push.
+

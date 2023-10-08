@@ -1,0 +1,32 @@
+First session on github :-
+
+
+What is git?
+
+-> Git is a distributed version control system (DVCS) that allows developers to track changes in their 
+   codebase,collaborate with others, and manage their software projects efficiently.
+
+   GitHub, on the other hand, is a web-based platform built on top of Git that provides additional features for collaboration,
+   code hosting, and project management. GitHub allows developers to host their Git repositories online, making it easier for 
+   teams to work together on code.
+
+What is Stashing ?
+
+->Stashing is nothing but all the changes that i have made i dont want to commit it but also dont want to lose it,
+  then this all data will be saved in another folder that is not visible but when we want that data we can get it.
+
+Different commands :- exaples
+
+		        cd          -> change directory
+		        mkdir       -> make new directory
+		        touch       -> to create new text file
+		        rm -rf      -> to remove file
+			git add     -> to add changes
+			git commit -m -> to commit changes
+			git remote add origin -> adding url of repository
+			git push origin master -> to see commits and files in repository
+				
+
+                        and etc..
+
+
