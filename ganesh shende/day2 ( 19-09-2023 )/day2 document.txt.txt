@@ -1,0 +1,43 @@
+Session 2 on github
+
+What is branching ?
+
+-> Branching is to create another line of development without affecting 
+the main branch or repository.
+
+What is Forking ?
+
+-> Forking is to make a clone of the repository on your github account without affecting the main repository.
+
+What is head ?
+
+-> Head is just a poiter that says all the commits that you add will added in the current branch.
+
+
+Upstream url :-
+
+-> From where you fork this project that is known as upstream url by convention.
+
+
+To work on existing projects we have follow some steps :-
+
+
+		-> Fork
+		-> git clone
+		-> git upstream
+		-> git Branch -> create new branch
+		-> git checkout
+		-> git remote add origin
+		-> git push origin Branch name
+		-> git pull upstream main
+		-> git push upstream master.
+
+
+What is Sqaush ?
+
+-> It referce to the process of combining multiple commits into a single, large commit.
+
+
+Command :-
+
+git push origin (branch name) -f -> remove the deleted commit from github repository.
