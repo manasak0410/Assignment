@@ -1,0 +1,60 @@
+Git:
+Git is a distributed version control system (VCS) designed for tracking changes in source code during software development. It allows multiple collaborators to work on a project simultaneously, tracking changes, and managing different versions of the codebase. Git offers a decentralized model, meaning each developer has a complete copy of the project's history on their local machine. It provides essential commands like commit, branch, and merge for efficient collaboration. Git is known for its speed, data integrity, and flexibility, making it a fundamental tool for software development and version control.
+
+GitHub:
+GitHub is a web-based platform built around Git, providing hosting for Git repositories along with a range of collaboration and project management tools. Developers use GitHub to host their Git repositories in the cloud, making it easy to collaborate with others on open-source and private projects. It offers features like issue tracking, pull requests, and wikis, making it a powerful platform for team collaboration and community-driven development. GitHub has become a central hub for developers to share, collaborate, and contribute to a wide range of software projects, fostering open-source development and collaboration worldwide.
+
+Some basic git commands:-
+Initialize a New Git Repository:
+git init: Initializes a new Git repository in the current directory.
+
+Clone a Remote Repository:
+git clone <repository_url>: Creates a copy of a remote Git repository on your local machine.
+
+Check Repository Status:
+git status: Shows the current state of your working directory, including untracked, modified, and staged files.
+
+Stage Changes:
+git add <file>: Stages changes in a file for the next commit.
+git add . or git add -A: Stages all changes in the working directory for the next commit.
+
+Commit Changes:
+git commit -m "Commit message": Records staged changes into a new commit with a descriptive message.
+
+View Commit History:
+git log: Displays a history of commits, including commit messages, authors, and timestamps.
+
+Create a Branch:
+git branch <branch_name>: Creates a new branch.
+
+git checkout -b <branch_name>: Creates a new branch and switches to it.
+
+Switch Between Branches:
+git checkout <branch_name>: Switches to an existing branch.
+
+Merge Changes:
+git merge <branch_name>: Combines changes from one branch into another.
+
+Pull Changes from Remote Repository:
+git pull: Fetches changes from a remote repository and merges them into the current branch.
+
+Push Changes to Remote Repository:
+git push origin <branch_name>: Pushes your local commits to a remote repository.
+
+Undo Changes:
+git reset <file>: Unstages changes in a file.
+git reset --hard <commit_hash>: Resets the repository to a specific commit, discarding all changes after it.
+
+1)What is stashing?
+Stashing in Git is like putting your work aside in a safe place while you focus on something else. Imagine you're writing a story, but you suddenly need to address an urgent matter. You don't want to save your unfinished work because it's not ready yet. Instead, you put your current pages in a drawer, making your desk clear for the urgent task.
+
+In Git, when you use git stash, you're doing something similar. You temporarily save your changes (like new code or edits) without committing them. This helps you switch to a different task or branch without messing up your ongoing work. When you're ready to go back to your code, you open the drawer (git stash apply), and your changes are back on your desk for you to continue working.
+
+Stashing keeps your work organized and prevents you from accidentally losing changes or committing incomplete work. It's a handy tool for managing multiple tasks in Git.
+
+2)Steps for adding file to github repo:-
+1)git init
+2)git add file_name
+3)git commit -m "your message"
+4)git remote add origin "your url"
+5)git push orgin branch_name
